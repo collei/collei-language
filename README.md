@@ -1,5 +1,5 @@
-# Collei Packinst
-A package manager designed to work within Collei Plat MVC framework.
+# Collei Language
+Tools for working with the Collei language, one of the most recent conlangs.
 
 ## How to Use
 Just download the .zip and unpack it under your Apache htdocs, then hit
