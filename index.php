@@ -7,6 +7,7 @@ include 'src\ColleiLang\Morphology\Verbs\Verb.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbTense.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbMode.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbVoice.php';
+include 'src\ColleiLang\Morphology\Verbs\VerbPerson.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbDefiniteness.php';
 include 'src\ColleiLang\Morphology\Nouns\Noun.php';
 

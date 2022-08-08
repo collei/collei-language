@@ -7,6 +7,7 @@ use ColleiLang\Morphology\Verbs\Verb;
 use ColleiLang\Morphology\Verbs\VerbTense;
 use ColleiLang\Morphology\Verbs\VerbVoice;
 use ColleiLang\Morphology\Verbs\VerbMode;
+use ColleiLang\Morphology\Verbs\VerbPerson;
 use ColleiLang\Morphology\Verbs\VerbDefiniteness;
 
 /**
