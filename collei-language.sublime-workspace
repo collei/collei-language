@@ -1,0 +1,1311 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"TENSE",
+				"TENSE_IMPERFECT"
+			],
+			[
+				"Collei",
+				"ColleiLang"
+			],
+			[
+				"readline",
+				"readline_info"
+			],
+			[
+				"border",
+				"borderFormat"
+			],
+			[
+				"header",
+				"headerFormat"
+			],
+			[
+				"head",
+				"headerFormat"
+			],
+			[
+				"Output",
+				"OutputFormat"
+			],
+			[
+				"column",
+				"columnNames"
+			],
+			[
+				"in_",
+				"IN_SELF"
+			],
+			[
+				"SIZE",
+				"size"
+			],
+			[
+				"PHP",
+				"PHP_EOL"
+			],
+			[
+				"curent",
+				"currentPos"
+			],
+			[
+				"current",
+				"currentPos"
+			],
+			[
+				"curr",
+				"currentStart"
+			],
+			[
+				"false",
+				"FALSE"
+			],
+			[
+				"starts",
+				"startsWith"
+			],
+			[
+				"Command",
+				"CommandEntries"
+			],
+			[
+				"user",
+				"userOrDN"
+			],
+			[
+				"connec",
+				"connection"
+			],
+			[
+				"command",
+				"commandLine"
+			],
+			[
+				"default",
+				"defaultValue"
+			],
+			[
+				"argu",
+				"argument"
+			],
+			[
+				"subcla",
+				"subClauseOrField"
+			],
+			[
+				"sub",
+				"subClauseOrField"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"comna",
+				"commandName"
+			],
+			[
+				"comName",
+				"commandname"
+			],
+			[
+				"lo",
+				"long2ip"
+			],
+			[
+				"long",
+				"longHelp"
+			],
+			[
+				"comm",
+				"commandLine"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"ldap",
+				"ldapbind"
+			],
+			[
+				"ANSI_CURSOR",
+				"ANSI_CURSOR_POSXY"
+			],
+			[
+				"ANSI_",
+				"ANSI_CLEAR_LINE"
+			],
+			[
+				"ANSI_CLEAR_",
+				"ANSI_CLEAR_LINE"
+			],
+			[
+				"move",
+				"moveTo"
+			],
+			[
+				"ansi_",
+				"ANSI_CLEAR_SCREEN"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ansi_curso",
+				"ANSI_CURSOR_MOVE_LEFT"
+			],
+			[
+				"ANSI_CUR",
+				"ANSI_CURSOR_MOVE_RIGHT"
+			],
+			[
+				"cons",
+				"consoleDimensions"
+			],
+			[
+				"DEFAUL",
+				"DEFAULT_COLUMNS"
+			],
+			[
+				"stty",
+				"sttyResult"
+			],
+			[
+				"hast",
+				"hasStty"
+			],
+			[
+				"Colle",
+				"ColleiException"
+			],
+			[
+				"Packins",
+				"PackinstCommander"
+			],
+			[
+				"packin",
+				"packinst-config"
+			],
+			[
+				"disable",
+				"disable-add"
+			],
+			[
+				"PLAT_VENDOR",
+				"PLAT_VENDOR_FOLDER_NAME"
+			],
+			[
+				"plug",
+				"plugin_list"
+			],
+			[
+				"sign",
+				"signature"
+			],
+			[
+				"commandn",
+				"commandName"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"argument",
+				"argumentInfo"
+			],
+			[
+				"short",
+				"shortcut"
+			],
+			[
+				"op_",
+				"op_name"
+			],
+			[
+				"optio",
+				"optionValue"
+			],
+			[
+				"n",
+				"n---------------------------------------"
+			],
+			[
+				"arg",
+				"arg_descr"
+			],
+			[
+				"opt",
+				"op_default"
+			],
+			[
+				"Package",
+				"PackageManager"
+			],
+			[
+				"x",
+				"x1b"
+			],
+			[
+				"socket_set_b",
+				"socket_set_blocking"
+			],
+			[
+				"regex",
+				"regex_line"
+			],
+			[
+				"array",
+				"array_intersect"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"packe",
+				"packagePath"
+			],
+			[
+				"main",
+				"mainLocation"
+			],
+			[
+				"plat_plugin",
+				"plat_plugin_list_info"
+			],
+			[
+				"autold",
+				"autold_logger"
+			],
+			[
+				"init_plug",
+				"init_plugin_manager"
+			],
+			[
+				"autol",
+				"autold_logger"
+			],
+			[
+				"func",
+				"function_exists"
+			],
+			[
+				"PLAT",
+				"PLAT_CLASSES_SUFFIX"
+			],
+			[
+				"vendor",
+				"vendor_name"
+			],
+			[
+				"source",
+				"source_dir"
+			],
+			[
+				"is_nu",
+				"is_null"
+			],
+			[
+				"plugin",
+				"pluginFile"
+			],
+			[
+				"servlet",
+				"servletClass"
+			],
+			[
+				"group",
+				"groupLevels"
+			],
+			[
+				"control",
+				"controllerClass"
+			],
+			[
+				"subf",
+				"subfolders"
+			],
+			[
+				"mic",
+				"microsecond"
+			],
+			[
+				"setT",
+				"setTimezone"
+			],
+			[
+				"DateTime",
+				"DateTimeZone"
+			],
+			[
+				"DateT",
+				"DateTimeZone"
+			],
+			[
+				"Date",
+				"DateTimeZone"
+			],
+			[
+				"getroo",
+				"getRootFolderAppended"
+			],
+			[
+				"app",
+				"appendRootFolder"
+			],
+			[
+				"server",
+				"server_vars"
+			],
+			[
+				"SERV",
+				"_SERVER"
+			],
+			[
+				"page",
+				"pageCount"
+			],
+			[
+				"last",
+				"lastPage"
+			],
+			[
+				"rows",
+				"rowsPerPage"
+			],
+			[
+				"origi",
+				"origin_from"
+			],
+			[
+				"Model",
+				"ModelResult"
+			],
+			[
+				"cont",
+				"content_to_parse"
+			],
+			[
+				"gOrigin",
+				"gOriginFrom"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"cooki",
+				"cookiesForRemoval"
+			],
+			[
+				"remov",
+				"removeCookie"
+			],
+			[
+				"cook",
+				"cookiesForRemoval"
+			],
+			[
+				"searche",
+				"searchetarget"
+			],
+			[
+				"has",
+				"hasMany"
+			],
+			[
+				"letra",
+				"letra_atual"
+			],
+			[
+				"ler",
+				"letra_atual"
+			],
+			[
+				"diction",
+				"dictionary_divisor_letter"
+			],
+			[
+				"pre",
+				"previousPosition"
+			],
+			[
+				"Diction",
+				"DictionaryKeeperService"
+			],
+			[
+				"field",
+				"fieldren"
+			],
+			[
+				"pri",
+				"primaryKey"
+			],
+			[
+				"result",
+				"resultSet"
+			],
+			[
+				"conta",
+				"contact_id"
+			],
+			[
+				"btn-",
+				"btn-secondary"
+			],
+			[
+				"sqlsrv",
+				"sqlsrv_query"
+			],
+			[
+				"process",
+				"processView"
+			],
+			[
+				"val_",
+				"val_db"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"Conne",
+				"Connection"
+			],
+			[
+				"megalo",
+				"megalojaModal"
+			],
+			[
+				"megaloj",
+				"megaloja-modal"
+			],
+			[
+				"backgroun",
+				"background-attachment\tproperty"
+			],
+			[
+				"backgr",
+				"background-repeat\tproperty"
+			],
+			[
+				"text",
+				"text-overflow\tproperty"
+			],
+			[
+				"fornece",
+				"fornecedor_id"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"Sqlser",
+				"SqlServerDialect"
+			],
+			[
+				"must",
+				"must_change"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 2540,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Engine.php",
+			"settings":
+			{
+				"buffer_size": 339,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Morphology/Term.php",
+			"settings":
+			{
+				"buffer_size": 212,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Morphology/Nouns/Noun.php",
+			"settings":
+			{
+				"buffer_size": 269,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Morphology/Verbs/Verb.php",
+			"settings":
+			{
+				"buffer_size": 269,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Morphology/Verbs/VerbTense.php",
+			"settings":
+			{
+				"buffer_size": 682,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git",
+				"Git: Add All"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/_server/apache/sites/kazuha.local/collei-language",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Nouns",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs"
+	],
+	"file_history":
+	[
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/OutputFormat.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Utils/Str.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Grids/Table.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/index.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/console.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Console.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/services/GoogleAuthService.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/basefunc.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/README.md",
+		"/D/_server/apache/sites/kazuha.local/collei-language/composer.json",
+		"/D/_server/apache/sites/kazuha.local/Bravessign.cha",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Grids/TableCell.php",
+		"/D/_server/apache/Apache24/conf/extra/httpd-vhosts.conf",
+		"/D/_server/apache/sites/kazuha.local/collei-tools/conjugator.js",
+		"/D/_server/apache/Apache24/conf/httpd.conf",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Grids/TableBorder.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Auth/AuthConfirmator.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/servlets/ContactBookServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/autold.php",
+		"/D/_server/apache/sites/kazuha.local/plat/resources/views/layout/app.vis.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Geometry/Point.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Utils/Arr.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Commands/Command.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Geometry/Rect.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/OutputFormatInterface.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Utils/Values/Stream.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Grids/TableRow.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Rect.php",
+		"/I/xmrig-6.18.0/config.json",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Cyno.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Commands/CommandEntries.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Utils/Values/TextStream.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Auth/Ldap/Ldap.php",
+		"/I/xmrig-6.16.4/config.json",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/RGBColor.php",
+		"/H/pub/trabalho_box/Macro.Dev/ModeloNota.tpl",
+		"/H/pub/trabalho_box/NotasDebito_20220725/teste/notade.html",
+		"/H/pub/trabalho_box/NotasDebito_20220725/teste/NotaDebito_4141160000027837_20220725114825.html",
+		"/I/xmrig-6.16.4/config.new.json",
+		"/D/_server/apache/sites/kazuha.local/plat/app/models/Role.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Database/Yanfei/Model.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Database/Query/DB.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Database/Query/Query.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Database/Query/Clauses/Where.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Database/Query/Select.php",
+		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/App/App.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/services/SiteEngineService.php",
+		"/D/_server/apache/sites/kazuha.local/plat/resources/views/admin/users/item.vis.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/database.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/servlets/UserRegisterServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/servlets/UserManagerServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/servlets/SiteManagerServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/servlets/RoleManagerServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/servlets/LogonServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/servlets/AdminPanelServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/filters/AvailabilityInterceptorFilter.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/filters/AuthLoaderFilter.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/models/User.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/models/Site.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/models/RoleUser.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/services/TagManagerService.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/services/ContactRetainerService.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/models/Tag.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/models/MeanType.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/models/Mean.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/models/ContactType.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/models/ContactTag.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/dictionary/app/servlets/DictionaryKeeperServlet.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/dictionary/app/services/DictionaryKeeperService.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/dictionary/app/models/Speechpart.php",
+		"/D/_server/apache/sites/kazuha.local/plat/app/route.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/contacta/app/models/Contact.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/dictionary/app/models/Meaning.php",
+		"/D/_server/apache/sites/kazuha.local/plat/sites/dictionary/app/models/Entry.php",
+		"/I/xmrig-6.16.4/older2.config.json.khaenriah",
+		"/D/_server/apache/sites/des.php.local/plat/app/commands/HelpCommand.php",
+		"/D/_server/apache/sites/des.php.local/plat/app/servlets/SiteManagerServlet.php",
+		"/D/_server/apache/sites/des.php.local/plat/app/services/SiteEngineService.php",
+		"/D/_server/apache/sites/des.php.local/plat/sites/contacta/app/servlets/ContactBookServlet.php",
+		"/D/_server/apache/sites/des.php.local/plat/app/commands/PackinstCommander.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/packinst/src/Packinst/Package/GithubPackage.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/App/Loaders/ClassLoader.php",
+		"/D/_server/apache/sites/des.php.local/plat/storage/stub/classes/commands.stub",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/Commands/CommandEntries.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/ConsoleServlet.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/Commands/Command.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/App/Agents/Storage.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/CommandLine.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Http/Session.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/atafona/atafona.zip",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/Console.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Utils/Str.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Http/Uploaders/UploadedFile.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Utils/Parsers/RawRequestBodyParser.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Filesystem/File.php",
+		"/D/_server/apache/sites/des.php.local/plat/sites/forum/.dbc",
+		"/D/_server/apache/sites/des.php.local/plat/sites/dictionary/.dbc",
+		"/D/_server/apache/sites/des.php.local/plat/sites/contacta/.dbc",
+		"/D/_server/apache/sites/des.php.local/plat/conf/.dbc",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Database/Connections/Connection.php",
+		"/D/_runtime/openldap/sysconf/ldap.conf",
+		"/D/_server/apache/Apache24/certs/VeriSign_Class_3_Public_Primary_CA.cer",
+		"/D/_server/apache/__old/Apache24/conf/httpd.conf",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/App/App.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Database/Connections/MsSqlServerConnection.php",
+		"/D/_server/apache/OLD/Apache24/conf/httpd.conf",
+		"/D/_runtime/php/php8/README.md",
+		"/D/_server/apache/sites/des.php.local/Bravessign.cha",
+		"/H/works/CEF/Cemob/TI/DesativaFE/cemob-sp-site/ppo/UsuarioLDAP.php",
+		"/C/Users/ujunio/Downloads/active-directory-to-openldap-master/schema/duaconf/duaconf.schema",
+		"/C/Users/ujunio/Downloads/active-directory-to-openldap-master/schema/microsoftattributetype/microsoftattributetype.schema",
+		"/C/Users/ujunio/Downloads/active-directory-to-openldap-master/schema/microsoftobjectclass/microsoftobjectclass.schema",
+		"/H/works/CEF/Cemob/TI/DesativaFE/cemob-sp-site/funcoes/usuario.asp",
+		"/H/works/CEF/Cemob/TI/Study/Zalmir/Index.php",
+		"/H/works/CEF/Cemob/TI/Study/Zalmir/includes/recursos.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/System/Process.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/System/Terminal.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/Output/Rich/Formatter.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/Terminal.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Console/ConsoleApp.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Http/Cookie.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Utils/Collections/Properties.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Http/Request.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Views/ViewValidator.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Views/View.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Basement.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Http/Response.php",
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Utils/Files/ConfigFile.php"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 115.0,
+		"where_history":
+		[
+			"C:\\Program Files (x86)\\ApacheDS\\instances\\default\\partitions",
+			"C:\\Program Files (x86)\\ApacheDS\\instances\\default"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"10972141766",
+			"),",
+			"j",
+			"$this->hasRowDivisors",
+			"ffff00",
+			"row",
+			"createRow",
+			"count",
+			"point",
+			"read",
+			"split",
+			"commandName",
+			"$ev",
+			"$dv",
+			"$det",
+			"det",
+			"parameterInfo",
+			"servico",
+			"compat",
+			"ldap",
+			"mod_auth_",
+			"\\empty(",
+			"private final ",
+			"ldap",
+			"    ",
+			"hotmart",
+			"hotma",
+			"hotmart.com",
+			"\n\t\t",
+			"TESTING_SOURCES",
+			"callListener",
+			"Collei\\",
+			"PLAT_PLUGINS_GROUND",
+			"    ",
+			"porfiszpan@gmail.com",
+			"argumentInfo",
+			"$argList",
+			"$info['name']",
+			"\n\t\t\t",
+			"$info_item",
+			"$info",
+			"1",
+			"DIRECTORY_SEPARATOR",
+			"loader vazio",
+			"\n]);",
+			"(int)",
+			"\n        ",
+			"getResourcePath",
+			"porfiszpan@gmail.com",
+			"discord",
+			"osu",
+			"google",
+			"dialetica",
+			"^.*'([^']*)' => \\[(\\d+), '([^']*)'\\],$",
+			"^.*'([^']*) => \\[(\\d+), '([^']*)'\\],$",
+			"^.*'([^']*) => \\[(\\d+), '([^']*)'],$",
+			"empty",
+			"outlook",
+			"sualarido",
+			", \"",
+			"] ,",
+			"\" : [",
+			"] }",
+			"\"]",
+			"[\"",
+			"[ \"",
+			"\",\"",
+			"\", \"",
+			"\" : \"",
+			"{",
+			"vênus",
+			"mercúrio",
+			"plutão",
+			"urano",
+			"netuno",
+			"júpiter",
+			"cache",
+			"\"],",
+			"',\t\"",
+			"['",
+			"    ",
+			"\" \\u",
+			"\\u",
+			"\"/[",
+			"]/g},",
+			"', \"",
+			"','letters':",
+			"', 'letters':",
+			"{'base':'",
+			"    ",
+			"select ",
+			";\n",
+			"$mean",
+			"contactForm",
+			"mysqli::prepare",
+			"megalojaModal",
+			"'],\n",
+			".dbc",
+			"mysqli",
+			"exampleModal",
+			"  ",
+			" novitatis",
+			"aposition",
+			"-text",
+			"fitinha",
+			"AFF",
+			"\"fitinha\"",
+			"    ",
+			"use",
+			"Dialect",
+			"App",
+			"\n\t ",
+			"site(",
+			"app_not_loadable",
+			"route.php",
+			"megaloja/route",
+			"megaloja",
+			"There is no corresponding",
+			"app_not_loadable",
+			">\");",
+			"\t/**\n\t *\tBuild a OutputStyler instance with a bunch of styles\n\t *\n\t *\t@param\tarray\t$specs\tassociated array of tags indexed by their style names\n\t *\t@return\t\\Collei\\Console\\Output\\OutputStyler\t\n\t */\n",
+			"ColorPalette",
+			"// ",
+			"'*'",
+			"processTags",
+			"fetchColorAndSet",
+			"setAnsiColor",
+			"getColor256"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"y",
+			"origin",
+			"$subValue",
+			"$value",
+			"$subInfo",
+			"subInfo",
+			"service",
+			"empty(",
+			"private ",
+			"\t",
+			"",
+			"\t",
+			"parameterInfo",
+			"$realParams",
+			"$p_name",
+			"$info",
+			"$infoList",
+			"DIR_SEP",
+			"",
+			"INSERT INTO [dbo].[speechparts] ([id],[description],[abbreviated]) VALUES (\\2, '\\3', '\\1');",
+			", '",
+			"],",
+			"' => [",
+			"]]",
+			"']",
+			"['",
+			"', '",
+			"' => '",
+			"[",
+			"\",",
+			"' \t=> \"",
+			"'\t=> \"",
+			"'",
+			"\t",
+			"\"\\u",
+			" \\u",
+			"\"",
+			"\"],",
+			"',\t\"",
+			"', \"",
+			"['",
+			"\t",
+			"$item",
+			"contactMean",
+			"sqlsrv_query",
+			"contactForm",
+			"megalojaModal",
+			"\t",
+			"",
+			"-textum",
+			"novitatis",
+			"\"fitinha-text\"",
+			"\t",
+			"MySqlDialect",
+			"RGBColor",
+			"hexToRGB",
+			"\t",
+			"setAnsiEffect",
+			"setAnsiColor",
+			"Co::",
+			"\t",
+			"self::reset();",
+			"\t",
+			"fornecedor",
+			"fornecedores",
+			"Fornecedor",
+			"AdmFornecedoresServlet",
+			"AdmProdutosServlet",
+			"Response::make",
+			"-md-",
+			"Yanfei",
+			"Query",
+			"right",
+			"left",
+			"foreignFar",
+			"foreignNear",
+			"fillModelList",
+			"passwordField",
+			"_token",
+			"regenerateToken",
+			"\t",
+			"route_methods",
+			")",
+			"(",
+			"",
+			"\\t",
+			"$appName",
+			"getDatabase()->getConnection()",
+			"primaryKey",
+			"",
+			"Select",
+			"Where",
+			"DS",
+			"self::",
+			"PLAT_PLUGINS_CLASSES_ROOT_FOLDER",
+			"self::$logger_registry",
+			"url->path",
+			"route_path",
+			"route_method",
+			"$servletClass",
+			"servlet_class",
+			"initializeSite",
+			"servlet",
+			"uri_path",
+			"app_uri_tail",
+			"\\t",
+			"\\1\\t\\2\\t\\3",
+			"\t",
+			"\t\t\tlist.Add(\"\\1\");",
+			"\t",
+			"autenticador",
+			"\t",
+			"url(http://php.local/",
+			"url(/_assets/fontawesome-free-5.15.3-web/",
+			"url(http://php.local/",
+			"url(/_assets/fontawesome-free-5.15.3-web/",
+			"\t",
+			"\t\t\tlist.Add(\"\\1\");",
+			"\t",
+			"collei$",
+			"collei.com.br",
+			"collei",
+			"$COLLEIDIR",
+			"dc=collei,dc=com,dc=br",
+			"collei.com.br",
+			"ColleiDb",
+			"colleidb",
+			"389"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\_server\\apache\\sites\\kazuha.local\\collei-language"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/ColleiLang/Engine.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/ColleiLang/Morphology/Term.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/ColleiLang/Morphology/Nouns/Noun.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/ColleiLang/Morphology/Verbs/Verb.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/ColleiLang/Morphology/Verbs/VerbTense.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 32.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
