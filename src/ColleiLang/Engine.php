@@ -40,5 +40,10 @@ class Engine
 		return VerbTense::asArray();
 	}
 	
+	public static function persons()
+	{
+		return VerbPerson::asArray();
+	}
+	
 }
 

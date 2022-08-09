@@ -2,6 +2,8 @@
 
 include 'src\ColleiLang\Engine.php';
 include 'src\ColleiLang\ColleiEnum.php';
+include 'src\ColleiLang\Morphology\Conjugator.php';
+include 'src\ColleiLang\Morphology\VowelHarmony.php';
 include 'src\ColleiLang\Morphology\Term.php';
 include 'src\ColleiLang\Morphology\Verbs\Verb.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbTense.php';
@@ -12,7 +14,8 @@ include 'src\ColleiLang\Morphology\Verbs\VerbDefiniteness.php';
 include 'src\ColleiLang\Morphology\Nouns\Noun.php';
 
 use ColleiLang\Engine;
-use ColleiLang\Morphology\Verbs\VerbTense;
+use ColleiLang\Morphology\Conjugator;
+use ColleiLang\Morphology\Verbs\Verb;
 
 $term = $_REQUEST['term'] ?? '';
 $action = $_REQUEST['for'] ?? '';
@@ -48,6 +51,10 @@ $infos = [];
 .autosiz {
 	overflow-x: scroll !important;
 	overflow-y: scroll !important;
+}
+.blockisa {
+	display: inline-block !important;
+	width: 20vw !important;
 }
 
 	</style>
@@ -89,46 +96,6 @@ function showside(sel)
 			</p>
 		</form>
 	</fieldset>
-	<fieldset class="s20">
-		<form action="./" method="post">
-			<input type="hidden" name="for" value="makedeclension">
-			<p>
-				Choose all and hit <b>MAKE DECLENSION</b>.
-			</p>
-			<p>
-				<input type="text" name="term" />
-			</p>
-			<p>
-<?php
-$lists = [
-	'tenses' => Engine::tenses(),
-	'modes' => Engine::modes(),
-	'voices' => Engine::voices(),
-	'defins' => Engine::definitenesses(),
-];
-$tempo = VerbTense::new('perfect');
-$verdade = VerbTense::new('perfect') == VerbTense::new('PERFECT');
-$falso = VerbTense::new('perfect') == VerbTense::new('Imperfect');
-//
-foreach ($lists as $n => $list) {
-	echo "\r\n<select name=\"{$n}\">";
-	echo "\r\n\t<option value=\"0\">-- Select {$n} --</option>";
-	foreach ($list as $i => $val) {
-		echo "\r\n\t<option value=\"{$i}\">{$val}</option>";
-	}
-	echo "\r\n</select>";
-}
-//
-?>
-			</p>
-			<p>
-				Há uma coisa que diria <?=($tempo)?> cujo <?=($verdade ? 'V' : 'F')?> é <?=($falso ? 'V' : 'F')?>.
-			</p>
-			<p>
-				<input type="submit" name="makedeclension" value="MAKE DECLENSION" />
-			</p>
-		</form>
-	</fieldset>
 </div>
 <hr>
 <div id="logbelow" class="autosiz">
@@ -144,10 +111,46 @@ if (!empty($term) && !empty($action))
 {
 	if ($action == 'conjugate')
 	{
-		if (install_package($git_package))
-			echo "- Package $git_package installed successfully. $nl";
-		else
-			echo "- Error occurred while installing $git_package. Please verify. $nl";
+		$verb = new Verb($term);
+		$persons = Engine::persons();
+		$tenses = Engine::tenses();
+		$modes = Engine::modes();
+		$voices = Engine::voices();
+		$defines = Engine::definitenesses();
+		//
+		foreach ($modes as $mode) {
+			if ($mode->is('Imperative')) {
+				foreach ($defines as $define) {
+					echo '<fieldset class="blockisa"><legend>' . $mode . ' ' . $voice . ' ' . $tense . ' ' . $define . '</legend>';
+					foreach ($persons as $person) {
+						if (in_array((string)$person, ['Mi','On','Onk'], true)) {
+							echo '<div> &nbsp; &mdash; </div>'; 
+						} else {
+							$form = Conjugator::inflect($verb, $person, $tense, $mode, $voice, $define);
+							//
+							echo '<div>' . $person . ' ' . $form . '</div>'; 
+						}
+					}
+					echo '</fieldset>';
+				}
+				echo '<hr>';
+			} else {
+				foreach ($voices as $voice) {
+					foreach ($tenses as $tense) {
+						foreach ($defines as $define) {
+							echo '<fieldset class="blockisa"><legend>' . $mode . ' ' . $voice . ' ' . $tense . ' ' . $define . '</legend>';
+							foreach ($persons as $person) {
+								$form = Conjugator::inflect($verb, $person, $tense, $mode, $voice, $define);
+								//
+								echo '<div>' . $person . ' ' . $form . '</div>'; 
+							}
+							echo '</fieldset>';
+						}
+					}
+					echo '<hr>';
+				}
+			}
+		}		
 	}
 	elseif ($git_action == 'makedeclension')
 	{

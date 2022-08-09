@@ -18,43 +18,79 @@ use ColleiLang\Morphology\Verbs\VerbDefiniteness;
 class Conjugator
 {
 
+	private const VOWELS = [
+		'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'
+	];
+
 	private const PERSON_INDEXES = [
 		'Mi', 'Ti', 'On', 'Biz', 'Tiz', 'Onk'
 	];
 
-	private const PERSON_DESINENCES = [
-		'Front' = [
-			'Indefinite' => ['u', 'š', null, 'me', 'te', 'ech'],
-			'Definite' => ['em', 'ed', 'e', 'enu', 'itek', 'uk'],
+	private const INDEFINITES = [
+		'Imperfect' => [
+			0 => ['yu', 'yš', 'y', 'yme', 'yte', 'yche'],
+			1 => ['u', 'iš', 'e', 'ime', 'ite', 'ech']
 		],
-		'Back' = [
-			'Indefinite' => ['u', 'š', null, 'me', 'te', 'ech'],
-			'Definite' => ['om', 'od', 'a', 'onu', 'otok', 'uk'],
+		'Perfect' => [
+			0 => ['tu', 'tiš', 'te', 'time', 'tite', 'tche'],
+			1 => ['tu', 'tiš', 'te', 'time', 'tite', 'tche']
 		],
+		'Imperative' => [
+			0 => [null, 'c', null, 'moc', 'toc', null],
+			1 => [null, 'ic', null, 'emme', 'ette', null]
+		]
 	];
 
-	private const TENSE_DESINENCES = [
+	private const PERSON_DESINENCES = [
 		'Front' => [
-			'Imperfect' => 'y',
-			'Perfect' => 't',
+			'Imperfect' => [
+				'Indefinite' => self::INDEFINITES['Imperfect'],
+				'Definite' => ['yem', 'yed', 'ye', 'yenu', 'yene', 'yuk']
+			],
+			'Perfect' => [
+				'Indefinite' => self::INDEFINITES['Perfect'],
+				'Definite' => ['tem', 'ted', 'te', 'tenu', 'tene', 'tuk']
+			]
 		],
 		'Back' => [
-			'Imperfect' => 'y',
-			'Perfect' => 't',
+			'Imperfect' => [
+				'Indefinite' => self::INDEFINITES['Imperfect'],
+				'Definite' => ['yom', 'yod', 'ya', 'yonu', 'yana', 'yuk']
+			],
+			'Perfect' => [
+				'Indefinite' => self::INDEFINITES['Perfect'],
+				'Definite' => ['tom', 'tod', 'ta', 'tonu', 'tana', 'tuk']
+			]
+		]
+	];
+
+	private const PERSON_IMPERATIVES = [
+		'Front' => [
+			'Indefinite' => self::INDEFINITES['Imperative'],
+			'Definite' => [null, 'ched', null, 'chenu', 'chene', null]
 		],
+		'Back' => [
+			'Indefinite' => self::INDEFINITES['Imperative'],
+			'Definite' => [null, 'chod', null, 'chonu', 'chana', null]
+		]
 	];
 
 	private const VOICE_DESINENCES = [
 		'Front' => [
 			'Active' => null,
 			'Medial' => 'er',
-			'Passive' => 'i',
+			'Passive' => 'i'
 		],
 		'Back' => [
 			'Active' => null,
 			'Medial' => 'or',
-			'Passive' => 'i',
-		],
+			'Passive' => 'i'
+		]
+	];
+
+	private const MODE_PARTICLES = [
+		'Factual' => null,
+		'Desiderative' => 'na'
 	];
 
 	private static function generateForm(
@@ -65,15 +101,41 @@ class Conjugator
 		VerbVoice $voice,
 		VerbDefiniteness $definiteness
 	) {
-		$stem = $verb->getStem();
-		$vowelType = (string)$verb->getHarmony();
-		$pIndex = \array_search((string)$person, self::PERSON_INDEXES, true);
-		$pIndex = $pIndex ?: 0;
+		$base = $verb->getStem();
+		$harmony = (string)$verb->getHarmony();
+		$personIndex = \array_search(
+			(string)$person, self::PERSON_INDEXES, true
+		) ?: 0;
 		//
-		$base = $stem
-			. self::TENSE_DESINENCES[$vowelType][(string)$tense]
-			. self::PERSON_DESINENCES[$vowelType][(string)$definiteness][$pIndex]
-			. self::VOICE_DESINENCES[$vowelType][(string)$voice];
+		if ($mode->is('Imperative')) {
+			if ($definiteness->is('Indefinite')) {
+				$vowelful = $verb->endsInVowel() ? 0 : 1;
+				$base .= self::PERSON_IMPERATIVES[$harmony]['Indefinite'][$vowelful][$personIndex];
+			} elseif ($definiteness->is('Definite')) {
+				$base .= self::PERSON_IMPERATIVES[$harmony]['Definite'][$personIndex];
+			}
+			//
+			return $base;
+		}
+		//
+		if ($definiteness->is('Indefinite')) {
+			$vowelful = $verb->endsInVowel() ? 0 : 1;
+			$base .= self::PERSON_DESINENCES[$harmony][(string)$tense]['Indefinite'][$vowelful][$personIndex];
+		} elseif ($definiteness->is('Definite')) {
+			$base .= self::PERSON_DESINENCES[$harmony][(string)$tense]['Definite'][$personIndex];
+		}
+		//
+		$baseEnding = \substr($base, -1);
+		//
+		if (!$voice->is('Active')) {
+			$base = $base
+				. (\in_array($baseEnding, self::VOWELS) ? 'r' : '')
+				. self::VOICE_DESINENCES[$harmony][(string)$voice];
+		}
+		//
+		if ($mode->is('Desiderative')) {
+			$base = self::MODE_PARTICLES['Desiderative'] . ' ' . $base;
+		}
 		//
 		return $base;
 	}
