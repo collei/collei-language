@@ -2,6 +2,7 @@
 namespace ColleiLang\Morphology\Verbs;
 
 use ColleiLang\Morphology\Term;
+use ColleiLang\Morphology\Conjugator;
 use InvalidArgumentException;
 
 /**
@@ -77,6 +78,23 @@ class Verb extends Term
 	public function isBack()
 	{
 		return $this->stem->isBack();
+	}
+
+	/**
+	 *	Returns the correspondent verbal form according to parameters
+	 *
+	 *	@return	bool
+	 */
+	public function conjugate(
+		VerbPerson $person = null,
+		VerbTense $tense = null,
+		VerbMode $mode = null,
+		VerbVoice $voice = null,
+		VerbDefiniteness $definiteness = null
+	) {
+		return Conjugator::inflect(
+			$this, $person, $tense, $mode, $voice, $definiteness
+		);
 	}
 
 }

@@ -2,6 +2,9 @@
 namespace ColleiLang;
 
 use ColleiLang\Morphology\Term;
+use ColleiLang\Morphology\Person;
+use ColleiLang\Morphology\VowelHarmony;
+use ColleiLang\Morphology\Conjugator;
 use ColleiLang\Morphology\Nouns\Noun;
 use ColleiLang\Morphology\Verbs\Verb;
 use ColleiLang\Morphology\Verbs\VerbTense;
@@ -44,6 +47,29 @@ class Engine
 	{
 		return VerbPerson::asArray();
 	}
-	
+
+	public static function createNoun(string $content)
+	{
+		return new Noun($content);
+	}
+
+	public static function createVerb(string $content)
+	{
+		return new Verb($content);
+	}
+
+	public static function inflectVerb(
+		Verb $verb,
+		VerbPerson $person = null,
+		VerbTense $tense = null,
+		VerbMode $mode = null,
+		VerbVoice $voice = null,
+		VerbDefiniteness $definiteness = null
+	) {
+		return Conjugator::inflect(
+			$verb, $person, $tense, $mode, $voice, $definiteness
+		);
+	}
+
 }
 

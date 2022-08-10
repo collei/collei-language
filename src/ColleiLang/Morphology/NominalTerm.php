@@ -1,7 +1,7 @@
 <?php
 namespace ColleiLang\Morphology\Nouns;
 
-use ColleiLang\Morphology\NominalTerm;
+use ColleiLang\Morphology\Term;
 
 /**
  *	Embodies Noun features and actions 
@@ -10,7 +10,13 @@ use ColleiLang\Morphology\NominalTerm;
  *	@author Alarido <alarido.su@gmail.com>
  *	@since 2022-08-08
  */
-class Noun extends NominalTerm
+class NominalTerm extends Term
 {
+	
+	public function decline()
+	{
+		return null;
+	} 
+
 }
 

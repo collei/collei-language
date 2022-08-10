@@ -1,7 +1,7 @@
 <?php
 namespace ColleiLang\Morphology\Verbs;
 
-use ColleiLang\ColleiEnum;
+use ColleiLang\Morphology\Person;
 
 /**
  *	Embodies Verb mode constants 
@@ -10,12 +10,7 @@ use ColleiLang\ColleiEnum;
  *	@author Alarido <alarido.su@gmail.com>
  *	@since 2022-08-08
  */
-final class VerbPerson extends ColleiEnum
+final class VerbPerson extends Person
 {
-	/**
-	 *	@const array ALLOWED
-	 */
-	public const ALLOWED = ['Mi', 'Ti', 'On', 'Biz', 'Tiz', 'Onk'];
-
 }
 

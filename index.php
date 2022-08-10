@@ -4,6 +4,7 @@ include 'src\ColleiLang\Engine.php';
 include 'src\ColleiLang\ColleiEnum.php';
 include 'src\ColleiLang\Morphology\Conjugator.php';
 include 'src\ColleiLang\Morphology\VowelHarmony.php';
+include 'src\ColleiLang\Morphology\Person.php';
 include 'src\ColleiLang\Morphology\Term.php';
 include 'src\ColleiLang\Morphology\Verbs\Verb.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbTense.php';
@@ -14,8 +15,6 @@ include 'src\ColleiLang\Morphology\Verbs\VerbDefiniteness.php';
 include 'src\ColleiLang\Morphology\Nouns\Noun.php';
 
 use ColleiLang\Engine;
-use ColleiLang\Morphology\Conjugator;
-use ColleiLang\Morphology\Verbs\Verb;
 
 $term = $_REQUEST['term'] ?? '';
 $action = $_REQUEST['for'] ?? '';
@@ -111,7 +110,7 @@ if (!empty($term) && !empty($action))
 {
 	if ($action == 'conjugate')
 	{
-		$verb = new Verb($term);
+		$verb = Engine::createVerb($term);
 		$persons = Engine::persons();
 		$tenses = Engine::tenses();
 		$modes = Engine::modes();
@@ -126,7 +125,7 @@ if (!empty($term) && !empty($action))
 						if (in_array((string)$person, ['Mi','On','Onk'], true)) {
 							echo '<div> &nbsp; &mdash; </div>'; 
 						} else {
-							$form = Conjugator::inflect($verb, $person, $tense, $mode, $voice, $define);
+							$form = $verb->conjugate($person, $tense, $mode, $voice, $define);
 							//
 							echo '<div>' . $person . ' ' . $form . '</div>'; 
 						}
@@ -140,7 +139,7 @@ if (!empty($term) && !empty($action))
 						foreach ($defines as $define) {
 							echo '<fieldset class="blockisa"><legend>' . $mode . ' ' . $voice . ' ' . $tense . ' ' . $define . '</legend>';
 							foreach ($persons as $person) {
-								$form = Conjugator::inflect($verb, $person, $tense, $mode, $voice, $define);
+								$form = $verb->conjugate($person, $tense, $mode, $voice, $define);
 								//
 								echo '<div>' . $person . ' ' . $form . '</div>'; 
 							}
