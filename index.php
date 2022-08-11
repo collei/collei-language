@@ -2,17 +2,23 @@
 
 include 'src\ColleiLang\Engine.php';
 include 'src\ColleiLang\ColleiEnum.php';
+include 'src\ColleiLang\Contracts\Vowels.php';
+include 'src\ColleiLang\Contracts\Persons.php';
+include 'src\ColleiLang\Contracts\Cases.php';
+include 'src\ColleiLang\Morphology\NominalCase.php';
 include 'src\ColleiLang\Morphology\Conjugator.php';
-include 'src\ColleiLang\Morphology\VowelHarmony.php';
-include 'src\ColleiLang\Morphology\Person.php';
+include 'src\ColleiLang\Morphology\Declensor.php';
 include 'src\ColleiLang\Morphology\Term.php';
+include 'src\ColleiLang\Morphology\NominalTerm.php';
+include 'src\ColleiLang\Morphology\Person.php';
+include 'src\ColleiLang\Morphology\VowelHarmony.php';
+include 'src\ColleiLang\Morphology\Nouns\Noun.php';
 include 'src\ColleiLang\Morphology\Verbs\Verb.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbTense.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbMode.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbVoice.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbPerson.php';
 include 'src\ColleiLang\Morphology\Verbs\VerbDefiniteness.php';
-include 'src\ColleiLang\Morphology\Nouns\Noun.php';
 
 use ColleiLang\Engine;
 

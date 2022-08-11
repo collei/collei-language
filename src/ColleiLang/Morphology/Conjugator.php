@@ -7,6 +7,8 @@ use ColleiLang\Morphology\Verbs\VerbVoice;
 use ColleiLang\Morphology\Verbs\VerbMode;
 use ColleiLang\Morphology\Verbs\VerbPerson;
 use ColleiLang\Morphology\Verbs\VerbDefiniteness;
+use ColleiLang\Contracts\Vowels;
+use ColleiLang\Contracts\Persons;
 
 /**
  *	Conjugation engine
@@ -15,17 +17,8 @@ use ColleiLang\Morphology\Verbs\VerbDefiniteness;
  *	@author Alarido <alarido.su@gmail.com>
  *	@since 2022-08-08
  */
-class Conjugator
+class Conjugator implements Vowels, Persons
 {
-
-	private const VOWELS = [
-		'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'
-	];
-
-	private const PERSON_INDEXES = [
-		'Mi', 'Ti', 'On', 'Biz', 'Tiz', 'Onk'
-	];
-
 	private const INDEFINITES = [
 		'Imperfect' => [
 			0 => ['yu', 'yš', 'y', 'yme', 'yte', 'yche'],
@@ -104,7 +97,7 @@ class Conjugator
 		$base = $verb->getStem();
 		$harmony = (string)$verb->getHarmony();
 		$personIndex = \array_search(
-			(string)$person, self::PERSON_INDEXES, true
+			(string)$person, self::PERSONS, true
 		) ?: 0;
 		//
 		if ($mode->is('Imperative')) {

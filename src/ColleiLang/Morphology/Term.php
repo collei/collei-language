@@ -2,6 +2,7 @@
 namespace ColleiLang\Morphology;
 
 use ColleiLang\Morphology\VowelHarmony;
+use ColleiLang\Contracts\Vowels;
 
 /**
  *	Shared features of every word 
@@ -10,14 +11,12 @@ use ColleiLang\Morphology\VowelHarmony;
  *	@author Alarido <alarido.su@gmail.com>
  *	@since 2022-08-08
  */
-class Term
+class Term implements Vowels
 {
 	/**
-	 *	@const array VOWELS
 	 *	@const array VOWELS_BACK
 	 *	@const array VOWELS_FRONT
 	 */
-	private const VOWELS = ['a','A','e','E','i','I','o','O','u','U'];
 	private const VOWELS_BACK = ['a','A','o','O','u','U'];
 	private const VOWELS_FRONT = ['e','E','i','I'];
 

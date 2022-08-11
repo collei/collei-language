@@ -1,5 +1,5 @@
 <?php
-namespace ColleiLang\Morphology\Nouns;
+namespace ColleiLang\Morphology;
 
 use ColleiLang\Morphology\Term;
 
