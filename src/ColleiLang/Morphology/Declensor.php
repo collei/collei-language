@@ -8,6 +8,7 @@ use ColleiLang\Morphology\Nouns\Noun;
 use ColleiLang\Contracts\Vowels;
 use ColleiLang\Contracts\Persons;
 use ColleiLang\Contracts\Cases;
+use InvalidArgumentException;
 
 /**
  *	Conjugation engine
@@ -257,6 +258,13 @@ class Declensor implements Vowels, Persons, Cases
 		Person $person,
 		Number $number
 	) {
+		$comp = \ucfirst(\strtolower($nominalTerm->asString()));
+		if (\in_array($comp, self::PERSONS)) {
+			throw new InvalidArgumentException(
+				$nominalTerm . ' is not declinable on possessives.'
+			);
+		}
+		//
 		return self::generatePossessiveForm(
 			$nominalTerm, $person, $number
 		);
