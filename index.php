@@ -11,6 +11,7 @@ include 'src\ColleiLang\Morphology\Declensor.php';
 include 'src\ColleiLang\Morphology\Term.php';
 include 'src\ColleiLang\Morphology\NominalTerm.php';
 include 'src\ColleiLang\Morphology\Person.php';
+include 'src\ColleiLang\Morphology\Number.php';
 include 'src\ColleiLang\Morphology\VowelHarmony.php';
 include 'src\ColleiLang\Morphology\Nouns\Noun.php';
 include 'src\ColleiLang\Morphology\Verbs\Verb.php';
@@ -57,9 +58,21 @@ $infos = [];
 	overflow-x: scroll !important;
 	overflow-y: scroll !important;
 }
-.blockisa {
+fieldset.blockisa {
 	display: inline-block !important;
 	width: 20vw !important;
+}
+fieldset.declension {
+	width: 40vw !important;
+}
+fieldset.declension > div {
+	display: block !important;
+	white-space: nowrap !important;
+	width: 100% !important;
+}
+fieldset.declension > div > div {
+	display: inline-block !important;
+	width: 25% !important;
 }
 
 	</style>
@@ -104,7 +117,6 @@ function showside(sel)
 </div>
 <hr>
 <div id="logbelow" class="autosiz">
-	<pre>
 <?php
 
 ################################################################
@@ -157,23 +169,65 @@ if (!empty($term) && !empty($action))
 			}
 		}		
 	}
-	elseif ($git_action == 'makedeclension')
+	elseif ($action == 'makedeclension')
 	{
-		if (remove_package($git_package))
-			echo "- Package $git_package removed successfully. $nl";
-		else
-			echo "- Error occurred while removing $git_package. Please verify. $nl";
+		$noun = Engine::createNoun($term);
+		$persons = Engine::listOf('noun:person');
+		$numbers = Engine::listOf('noun:number');
+		$cases = Engine::listOf('noun:cases');
+		//
+		?>
+		<fieldset class="declension">
+			<legend>Declension of <i><?=($noun)?></i></legend>
+			<div>
+				<div>&nbsp;</div>
+		<?php
+		//
+		foreach ($numbers as $number) {
+			echo "\r\n\t\t\t\t<div><b>{$number}</b></div>";
+		}
+		//
+		?>
+			</div>
+		<?php
+		//
+		foreach ($cases as $case) {
+			echo "\r\n\t\t\t<div>\r\n\t\t\t\t<div><b>{$case}</b></div>";
+			//
+			foreach ($numbers as $number) {
+				$form = $noun->decline($number, $case);
+				//
+				echo "\r\n\t\t\t\t<div>{$form}</div>";
+			}
+			//
+			echo "\r\n\t\t\t</div>";
+		}
+		//
+		?>
+			<hr>
+			<div><b>Nominative Possessive System</b></div>
+		<?php
+		//
+		foreach ($persons as $person) {
+			echo "\r\n\t\t\t<div>\r\n\t\t\t\t<div><b>{$person}</b></div>";
+			//
+			foreach ($numbers as $number) {
+				$form = $noun->possessive($person, $number);
+				//
+				echo "\r\n\t\t\t\t<div>{$form}</div>";
+			}
+			//
+			echo "\r\n\t\t\t</div>";
+		}
+		//
+		?>
+		</fieldset>
+		<?php
+		//
 	}
 }
-elseif (1 == 2)
-{
-
-}
-
-
-
+//
 ?>
-	</pre>
 </div>
 </body>
 </html>

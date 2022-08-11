@@ -19,6 +19,9 @@ use ColleiLang\Contracts\Persons;
  */
 class Conjugator implements Vowels, Persons
 {
+	/**
+	 *	@const array INDEFINITES
+	 */
 	private const INDEFINITES = [
 		'Imperfect' => [
 			0 => ['yu', 'yš', 'y', 'yme', 'yte', 'yche'],
@@ -34,6 +37,9 @@ class Conjugator implements Vowels, Persons
 		]
 	];
 
+	/**
+	 *	@const array PERSON_DESINENCES
+	 */
 	private const PERSON_DESINENCES = [
 		'Front' => [
 			'Imperfect' => [
@@ -57,6 +63,9 @@ class Conjugator implements Vowels, Persons
 		]
 	];
 
+	/**
+	 *	@const array PERSON_IMPERATIVES
+	 */
 	private const PERSON_IMPERATIVES = [
 		'Front' => [
 			'Indefinite' => self::INDEFINITES['Imperative'],
@@ -68,6 +77,9 @@ class Conjugator implements Vowels, Persons
 		]
 	];
 
+	/**
+	 *	@const array VOICE_DESINENCES
+	 */
 	private const VOICE_DESINENCES = [
 		'Front' => [
 			'Active' => null,
@@ -81,11 +93,25 @@ class Conjugator implements Vowels, Persons
 		]
 	];
 
+	/**
+	 *	@const array MODE_PARTICLES
+	 */
 	private const MODE_PARTICLES = [
 		'Factual' => null,
 		'Desiderative' => 'na'
 	];
 
+	/**
+	 *	Generates conjugated forms
+	 *	@static
+	 *	@param	\ColleiLang\Morphology\Verbs\Verb	$pp
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbPerson	$person
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbTense	$tense
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbMode	$mode
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbVoice	$voice
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbDefiniteness	$definiteness
+	 *	@return	string
+	 */
 	private static function generateForm(
 		Verb $verb,
 		VerbPerson $person,
@@ -133,6 +159,17 @@ class Conjugator implements Vowels, Persons
 		return $base;
 	}
 	
+	/**
+	 *	Generates conjugated forms
+	 *	@static
+	 *	@param	\ColleiLang\Morphology\Verbs\Verb	$pp
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbPerson	$person
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbTense	$tense
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbMode	$mode
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbVoice	$voice
+	 *	@param	\ColleiLang\Morphology\Verbs\VerbDefiniteness	$definiteness
+	 *	@return	string
+	 */
 	public static function inflect(
 		Verb $verb,
 		VerbPerson $person = null,
@@ -152,4 +189,5 @@ class Conjugator implements Vowels, Persons
 	}
 
 }
+
 

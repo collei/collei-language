@@ -523,34 +523,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 4206,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/ColleiLang/Morphology/Term.php",
-			"settings":
-			{
-				"buffer_size": 2783,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/ColleiLang/Morphology/Verbs/Verb.php",
-			"settings":
-			{
-				"buffer_size": 1750,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/ColleiLang/Morphology/Conjugator.php",
-			"settings":
-			{
-				"buffer_size": 4087,
+				"buffer_size": 4504,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,26 +532,43 @@
 			"file": "src/ColleiLang/Morphology/Declensor.php",
 			"settings":
 			{
-				"buffer_size": 1379,
+				"buffer_size": 3249,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/ColleiLang/Engine.php",
+			"file": "src/ColleiLang/Contracts/Cases.php",
 			"settings":
 			{
-				"buffer_size": 1521,
+				"buffer_size": 385,
 				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "<?php"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/ColleiLang/Morphology/NominalTerm.php",
+			"file": "/D/_server/apache/sites/kazuha.local/collei-tools/conjugator.js",
 			"settings":
 			{
-				"buffer_size": 326,
+				"buffer_size": 18368,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Morphology/Number.php",
+			"settings":
+			{
+				"buffer_size": 350,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ColleiLang/Morphology/Conjugator.php",
+			"settings":
+			{
+				"buffer_size": 4012,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -623,6 +613,7 @@
 		"/D/_server/apache/sites/kazuha.local/collei-language",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Contracts",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Nouns",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs"
@@ -630,6 +621,18 @@
 	"file_history":
 	[
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Nouns/Noun.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/NominalTerm.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Term.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/NominalCase.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Contracts/Vowels.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Contracts/Persons.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Conjugator.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/Verb.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Traits/Persons.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Traits/Vowels.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Engine.php",
+		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Case.php",
+		"/D/_server/apache/sites/kazuha.local/collei-tools/conjugator.js",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Person.php",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/VerbPerson.php",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/VowelHarmony.php",
@@ -638,8 +641,6 @@
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/VerbVoice.php",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/VerbMode.php",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/VerbTense.php",
-		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/Verb.php",
-		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Term.php",
 		"/D/_server/apache/sites/kazuha.local/collei-language/README.md",
 		"/D/_server/apache/sites/kazuha.local/collei-language/.gitignore",
 		"/D/_server/apache/sites/kazuha.local/collei-language/src/ColleiLang/Morphology/Verbs/PerfectTense.php",
@@ -656,7 +657,6 @@
 		"/D/_server/apache/sites/kazuha.local/Bravessign.cha",
 		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Grids/TableCell.php",
 		"/D/_server/apache/Apache24/conf/extra/httpd-vhosts.conf",
-		"/D/_server/apache/sites/kazuha.local/collei-tools/conjugator.js",
 		"/D/_server/apache/Apache24/conf/httpd.conf",
 		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Console/Output/Grids/TableBorder.php",
 		"/D/_server/apache/sites/kazuha.local/plat/vendor/collei/collei/src/Collei/Auth/AuthConfirmator.php",
@@ -747,16 +747,7 @@
 		"/D/_server/apache/Apache24/certs/VeriSign_Class_3_Public_Primary_CA.cer",
 		"/D/_server/apache/__old/Apache24/conf/httpd.conf",
 		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/App/App.php",
-		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Database/Connections/MsSqlServerConnection.php",
-		"/D/_server/apache/OLD/Apache24/conf/httpd.conf",
-		"/D/_runtime/php/php8/README.md",
-		"/D/_server/apache/sites/des.php.local/Bravessign.cha",
-		"/H/works/CEF/Cemob/TI/DesativaFE/cemob-sp-site/ppo/UsuarioLDAP.php",
-		"/C/Users/ujunio/Downloads/active-directory-to-openldap-master/schema/duaconf/duaconf.schema",
-		"/C/Users/ujunio/Downloads/active-directory-to-openldap-master/schema/microsoftattributetype/microsoftattributetype.schema",
-		"/C/Users/ujunio/Downloads/active-directory-to-openldap-master/schema/microsoftobjectclass/microsoftobjectclass.schema",
-		"/H/works/CEF/Cemob/TI/DesativaFE/cemob-sp-site/funcoes/usuario.asp",
-		"/H/works/CEF/Cemob/TI/Study/Zalmir/Index.php"
+		"/D/_server/apache/sites/des.php.local/plat/vendor/collei/collei/src/Collei/Database/Connections/MsSqlServerConnection.php"
 	],
 	"find":
 	{
@@ -776,6 +767,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"PERSON_INDEXES",
 			"vowelType",
 			"pIndex",
 			"]\n",
@@ -902,8 +894,7 @@
 			"There is no corresponding",
 			"app_not_loadable",
 			">\");",
-			"\t/**\n\t *\tBuild a OutputStyler instance with a bunch of styles\n\t *\n\t *\t@param\tarray\t$specs\tassociated array of tags indexed by their style names\n\t *\t@return\t\\Collei\\Console\\Output\\OutputStyler\t\n\t */\n",
-			"ColorPalette"
+			"\t/**\n\t *\tBuild a OutputStyler instance with a bunch of styles\n\t *\n\t *\t@param\tarray\t$specs\tassociated array of tags indexed by their style names\n\t *\t@return\t\\Collei\\Console\\Output\\OutputStyler\t\n\t */\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -911,6 +902,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"PERSONS",
 			"harmony",
 			"personIndex",
 			"definiteness",
@@ -1037,8 +1029,7 @@
 			"\t",
 			"collei$",
 			"collei.com.br",
-			"collei",
-			"$COLLEIDIR"
+			"collei"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1055,7 +1046,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1064,128 +1055,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4206,
+						"buffer_size": 4504,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3719,
-								3719
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2457.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/ColleiLang/Morphology/Term.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2783,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1290,
-								1290
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 88.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/ColleiLang/Morphology/Verbs/Verb.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1750,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1745,
-								1745
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1323.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/ColleiLang/Morphology/Conjugator.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4087,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								4087
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1575.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/ColleiLang/Morphology/Declensor.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1379,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1272,
-								1272
+								219,
+								219
 							]
 						],
 						"settings":
@@ -1197,53 +1075,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "src/ColleiLang/Engine.php",
+					"buffer": 1,
+					"file": "src/ColleiLang/Morphology/Declensor.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1521,
+						"buffer_size": 3249,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1077,
-								1077
+								1744,
+								1744
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 1575.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/ColleiLang/Morphology/NominalTerm.php",
+					"buffer": 2,
+					"file": "src/ColleiLang/Contracts/Cases.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 326,
+						"buffer_size": 385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								289,
-								290
+								214,
+								214
 							]
 						],
 						"settings":
@@ -1255,6 +1133,92 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/_server/apache/sites/kazuha.local/collei-tools/conjugator.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 945.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/ColleiLang/Morphology/Number.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/ColleiLang/Morphology/Conjugator.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4012,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2484,
+								2491
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1575.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

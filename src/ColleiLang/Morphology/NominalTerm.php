@@ -13,10 +13,19 @@ use ColleiLang\Morphology\Term;
 class NominalTerm extends Term
 {
 	
-	public function decline()
+	public function decline(Number $number, NominalCase $case)
 	{
-		return null;
-	} 
+		return Declensor::decline(
+			$this, $number, $case
+		);
+	}
+	
+	public function possessive(Person $person, Number $number)
+	{
+		return Declensor::declinePossessive(
+			$this, $person, $number
+		);
+	}
 
 }
 

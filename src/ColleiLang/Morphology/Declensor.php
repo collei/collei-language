@@ -18,6 +18,9 @@ use ColleiLang\Contracts\Cases;
  */
 class Declensor implements Vowels, Persons, Cases
 {
+	/**
+	 *	@const array PERSON_DESINENCES
+	 */
 	private const PERSON_DESINENCES = [
 		'Front' => [
 			'Singular' => [
@@ -41,6 +44,21 @@ class Declensor implements Vowels, Persons, Cases
 		]
 	];
 
+	/**
+	 *	@const array DECLENSION_EXCLUSIONS
+	 */
+	private const DECLENSION_EXCLUSIONS = [
+		'mi' => ['mi', 'mett', 'men', 'nekem', 'kerem', 'mini', 'mive', 'mino', 'mile', 'mito'],
+		'ti' => ['ti', 'tett', 'ten', 'neked', 'kered', 'tini', 'tive', 'tino', 'tile', 'tito'],
+		'on' => ['on', 'ot',   'on',  'neki',  'keri',  'onni', 'onve', 'onno', 'onle', 'onto'],
+		'biz' => ['biz', 'bizt', 'ben', 'nekenu',  'kerenu',  'bizni', 'bizve', 'bizno', 'bizle', 'bizto'],
+		'tiz' => ['tiz', 'tizt', 'ten', 'nekitek', 'keritek', 'tizni', 'tizve', 'tizno', 'tizle', 'tizto'],
+		'onk' => ['onk', 'kont', 'kon', 'nekyuk',  'keryuk',  'onkni', 'onkve', 'onkno', 'onkle', 'onkto'],
+	];
+
+	/**
+	 *	@const array PLURAL_PATTERNS
+	 */
 	private const PLURAL_PATTERNS = [
 		'um' => 'a',
 		'ra' => 'ri',
@@ -52,6 +70,9 @@ class Declensor implements Vowels, Persons, Cases
 		'' => 'im'
 	];
 
+	/**
+	 *	@const array NUMBER_DESINENCES
+	 */
 	private const NUMBER_DESINENCES = [
 		'Front' => [
 			'Singular' => null,
@@ -65,10 +86,43 @@ class Declensor implements Vowels, Persons, Cases
 		]
 	];
 
+	/**
+	 *	@const array POSSESSION_DESINENCES
+	 */
 	private const POSSESSION_DESINENCES = [
-		''
+		'Front' => [
+			'Singular' => [
+				0 => ['m','d','y','nu','tek','yuk'],
+				1 => ['em','ed','ye','enu','itek','yuk']
+			],
+			'Dual' => [
+				0 => ['lerem','lered','lerye','lerenu','lertek','leryuk'],
+				1 => ['lerem','lered','lerye','lerenu','lertek','leryuk']
+			],
+			'Plural' => [
+				0 => ['im','id','iy','inu','itek','iyuk'],
+				1 => ['eim','eid','eiye','einu','eitek','eiyuk']
+			]
+		],
+		'Back' => [
+			'Singular' => [
+				0 => ['m','d','y','nu','tok','yuk'],
+				1 => ['om','od','ya','onu','otok','yuk']
+			],
+			'Dual' => [
+				0 => ['laram','larad','larya','laranu','lartok','laryuk'],
+				1 => ['laram','larad','larya','laranu','lartok','laryuk']
+			],
+			'Plural' => [
+				0 => ['im','id','iy','inu','itok','iyuk'],
+				1 => ['oim','oid','oiya','oinu','oitok','oiyuk']
+			]
+		]
 	];
 
+	/**
+	 *	@const array POSSESSION_EXCLUSIONS
+	 */
 	private const POSSESSION_EXCLUSIONS = [
 		'nak' => ['nakom', 'nakod', 'nakya', 'nakanu', 'nakotok', 'nakyuk'],
 		'nek' => ['nekem', 'neked', 'nekye', 'nekenu', 'nekitek', 'nekyuk'],
@@ -77,24 +131,40 @@ class Declensor implements Vowels, Persons, Cases
 		'ni' => ['nim', 'nid', 'niy', 'ninu', 'nitek', 'niyuk'],
 	];
 
+	/**
+	 *	Generates declined forms
+	 *	@static
+	 *	@param	\ColleiLang\Morphology\NominalTerm	$nominal
+	 *	@param	\ColleiLang\Morphology\Number	$number
+	 *	@param	\ColleiLang\Morphology\NominalCase	$case
+	 *	@return	string|null
+	 */
 	private static function generateForm(
-		Noun $noun,
+		NominalTerm $nominal,
 		Number $number,
 		NominalCase $case
 	) {
-		$base = (string)$noun;
-		$harmony = $noun->getHarmony();
-		$voweled = (\in_array($noun->last(), self::VOWELS, true) ? 0 : 1);
+		$base = (string)$nominal;
+		$baseLower = \strtolower($base);
+		$caseId = \array_search((string)$case, self::CASES) ?: 0;
+		//
+		if (array_key_exists($baseLower, self::DECLENSION_EXCLUSIONS))
+		{
+			return self::DECLENSION_EXCLUSIONS[$baseLower][$caseId];
+		}
+		//
+		$harmony = $nominal->getHarmony();
+		$voweled = (\in_array($nominal->last(), self::VOWELS, true) ? 0 : 1);
 		//
 		if ($case->is('Nominative') && $number->is('Plural')) {
 			foreach (self::PLURAL_PATTERNS as $from => $to) {
 				if (empty($from)) {
-					return $baseNoun->asString() . $to;
+					return $nominal->asString() . $to;
 				} else {
 					$suffixLength = \strlen($from);
-					if ($baseNoun->last($suffixLength) == $from) {
+					if ($nominal->last($suffixLength) == $from) {
 						return \substr(
-							$baseNoun->asString(), 0, -$suffixLength
+							$nominal->asString(), 0, -$suffixLength
 						) . $to;
 					}
 				}
@@ -111,18 +181,87 @@ class Declensor implements Vowels, Persons, Cases
 		//
 		$caseId = \array_search((string)$case, self::CASES);
 		//
-		return self::PERSON_DESINENCES[(string)$harmony][$numberStr][$caseId] ?? '';
+		if ($n = self::PERSON_DESINENCES[(string)$harmony] ?? false) {
+			return $base . $n[$numberStr][$voweled][$caseId] ?? null;
+		}
+		//
+		return null;
+	}
+
+	/**
+	 *	Generates declined forms
+	 *	@static
+	 *	@param	\ColleiLang\Morphology\NominalTerm	$nominal
+	 *	@param	\ColleiLang\Morphology\Person	$person
+	 *	@param	\ColleiLang\Morphology\Number	$number
+	 *	@return	string|null
+	 */
+	private static function generatePossessiveForm(
+		NominalTerm $nominal,
+		Person $person,
+		Number $number
+	) {
+		$base = (string)$nominal;
+		$baseLower = \strtolower($base);
+		$personId = \array_search((string)$person, self::PERSONS) ?: 0;
+		//
+		if (array_key_exists($baseLower, self::POSSESSION_EXCLUSIONS))
+		{
+			return self::POSSESSION_EXCLUSIONS[$baseLower][$personId];
+		}
+		//
+		$harmony = $nominal->getHarmony();
+		$voweled = (\in_array($nominal->last(), self::VOWELS, true) ? 0 : 1);
+		//
+		if ($n = self::POSSESSION_DESINENCES[(string)$harmony] ?? false) {
+			if (isset($n[(string)$number][$voweled][$personId])) {
+				return $base . $n[(string)$number][$voweled][$personId];
+			}
+		}
+		//
+		return null;
 	}
 	
+	//////////////////////
+	////    public    ////
+	//////////////////////
+
+	/**
+	 *	Generates declined forms
+	 *	@static
+	 *	@param	\ColleiLang\Morphology\NominalTerm	$nominalTerm
+	 *	@param	\ColleiLang\Morphology\Number	$number
+	 *	@param	\ColleiLang\Morphology\NominalCase	$case
+	 *	@return	string|null
+	 */
 	public static function decline(
-		Noun $noun,
+		NominalTerm $nominalTerm,
 		Number $number,
 		NominalCase $case
 	) {
 		return self::generateForm(
-			$noun, $number, $case
+			$nominalTerm, $number, $case
+		);
+	}
+
+	/**
+	 *	Generates possessive forms
+	 *	@static
+	 *	@param	\ColleiLang\Morphology\NominalTerm	$nominalTerm
+	 *	@param	\ColleiLang\Morphology\Person	$person
+	 *	@param	\ColleiLang\Morphology\Number	$number
+	 *	@return	string|null
+	 */
+	public static function declinePossessive(
+		NominalTerm $nominalTerm,
+		Person $person,
+		Number $number
+	) {
+		return self::generatePossessiveForm(
+			$nominalTerm, $person, $number
 		);
 	}
 
 }
+
 

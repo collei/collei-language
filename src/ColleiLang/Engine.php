@@ -1,10 +1,13 @@
 <?php
 namespace ColleiLang;
 
+use ColleiLang\ColleiEnum;
 use ColleiLang\Morphology\Term;
 use ColleiLang\Morphology\Person;
 use ColleiLang\Morphology\VowelHarmony;
 use ColleiLang\Morphology\Conjugator;
+use ColleiLang\Morphology\Number;
+use ColleiLang\Morphology\NominalCase;
 use ColleiLang\Morphology\Nouns\Noun;
 use ColleiLang\Morphology\Verbs\Verb;
 use ColleiLang\Morphology\Verbs\VerbTense;
@@ -46,6 +49,55 @@ class Engine
 	public static function persons()
 	{
 		return VerbPerson::asArray();
+	}
+
+	public static function numbers()
+	{
+		return Number::asArray();
+	}
+
+	public static function cases()
+	{
+		return NominalCase::asArray();
+	}
+
+	public static function listOf(string $type)
+	{
+		$typex = $type;
+		$type = \strtolower(\trim($type));
+		//
+		switch ($type) {
+			case 'noun:person': // no used
+			case 'noun:persons':
+				return Person::asArray();
+			case 'noun:number': // no used
+			case 'noun:numbers':
+				return Number::asArray();
+			case 'noun:case': // no used
+			case 'noun:cases':
+				return NominalCase::asArray();
+			case 'verb:person': // no used
+			case 'verb:persons':
+				return VerbPerson::asArray();
+			case 'verb:mode': // no used
+			case 'verb:modes':
+				return VerbMode::asArray();
+			case 'verb:tense': // no used
+			case 'verb:tenses':
+				return VerbTense::asArray();
+			case 'verb:voice': // no used
+			case 'verb:voices':
+				return VerbVoice::asArray();
+			case 'verb:definiteness': // no used
+			case 'verb:definitenesses':
+				return VerbDefiniteness::asArray();
+			default:
+				break;
+		}
+		//
+		throw new InvalidArgumentException(
+			"There is no such list: \"$typex\"."
+		);
 	}
 
 	public static function createNoun(string $content)
