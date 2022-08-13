@@ -53,6 +53,7 @@ abstract class ColleiEnum
 	/**
 	 *	Returns if both values match 
 	 *
+	 *	@param	static|string	$value
 	 *	@return	bool
 	 */
 	public function is($value)
@@ -64,6 +65,23 @@ abstract class ColleiEnum
 		}
 		//
 		return false;
+	}
+
+	/**
+	 *	Returns if the contained value is one of the list
+	 *
+	 *	@param	static|string	...$values
+	 *	@return	bool
+	 */
+	public function in(...$values)
+	{
+		$result = false;
+		//
+		foreach ($values as $value) {
+			$result = $result || $this->is($value);
+		}
+		//
+		return $result;
 	}
 
 	/**
